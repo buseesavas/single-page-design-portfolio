@@ -1,0 +1,574 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Plus Jakarta Sans";
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  background-color: #fff7f0;
+  padding: 16px;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+font-size: 26px;
+font-weight: 700;
+line-height: 32.76px;
+text-align: center;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  color: #7a746e;
+}
+
+.about {
+  margin-inline: 29px;
+  margin-block: 32px;
+}
+.free-consultation-btn {
+  background-color: black;
+  border-radius: 100px;
+  padding: 8px 28px;
+}
+
+.free-consultation-btn a {
+  text-decoration: none;
+  color: #fff7f0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+}
+
+.graphic-design {
+  background-color: #755cde;
+  grid-area: graphic-design;
+}
+
+.graphic-design img {
+  margin-bottom: 94px;
+}
+
+.ui-ux {
+  background-color: #f6a560;
+  grid-area: ui-ux;
+}
+
+.ui-ux img,
+.apps img,
+.photography img,
+.motion-graphics img {
+  margin-bottom: 40px;
+}
+
+.apps {
+  background-color: #f39e9e;
+  grid-area: apps;
+}
+
+.illustrations {
+  background-color: #eb7565;
+  grid-area: illustrations;
+}
+
+.illustrations img {
+  margin-bottom: 16px;
+}
+
+.photography {
+  background-color: #61c4b7;
+  grid-area: photography;
+}
+
+.motion-graphics {
+  background-color: #552049;
+  grid-area: motion-graphics;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.24px;
+  text-align: left;
+  color: white;
+}
+
+.ability-cards {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.ability-cards .ability-card:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.ability-cards .ability-card:nth-child(4) {
+  grid-column: span 2;
+}
+
+.ability-cards .ability-card:nth-child(5) {
+  grid-column: span 2;
+}
+.ability-cards .ability-card:nth-child(6) {
+  grid-column: span 2;
+}
+
+.ability-card div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.ability-card div img {
+  align-self: flex-end;
+}
+
+.ability-card div h3 {
+  align-self: flex-start;
+}
+
+.who-is-amy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.who-is-amy img {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32.76px;
+  text-align: center;
+  color: #030303;
+}
+
+.amy-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.amy-btn {
+  background-color: #eb7565;
+  padding: 8px 28px;
+  border-radius: 100px;
+  max-width: 176px;
+  margin-inline: auto;
+}
+
+.amy-btn a {
+  text-decoration: none;
+  color: #fff7f0;
+font-size: 14px;
+font-weight: 700;
+line-height: 28px;
+text-align: left;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.left-right-btns {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.footer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  background: #030303;
+  padding: 49px 24px;
+  border-radius: 8px;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.footer-card h2 , .footer-card p {
+  color: #FFF7F0;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.slider {
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+  
+ 
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+ 
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: 180px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.slides img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+@media (width >= 768px) {
+
+  .amy-btn:hover {
+    background-color: #F6A560;
+  }
+  
+  .free-consultation-btn:hover {
+    background-color: #755CDE;
+  }
+  .amy-btn {
+    background-color: #eb7565;
+    padding: 14px 45px;
+    border-radius: 100px;
+    max-width: 228px;
+    margin: 0;
+  }
+
+  .amy-btn a {
+  font-size: 16px;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .graphic-design {
+    background-color: #755cde;
+    grid-area: graphic-design;
+  }
+  
+  .graphic-design img {
+    margin-bottom: 94px;
+  }
+  
+  .ui-ux {
+    background-color: #f6a560;
+    grid-area: ui-ux;
+  }
+  
+  .ui-ux img,
+  .apps img,
+  .photography img,
+  .motion-graphics img {
+    margin-bottom: 40px;
+  }
+  
+  .apps {
+    background-color: #f39e9e;
+    grid-area: apps;
+  }
+  
+  .illustrations {
+    background-color: #eb7565;
+    grid-area: illustrations;
+  }
+  
+  .illustrations img {
+    margin-bottom: 16px;
+  }
+  
+  .photography {
+    background-color: #61c4b7;
+    grid-area: photography;
+  }
+  
+  .motion-graphics {
+    background-color: #552049;
+    grid-area: motion-graphics;
+  }
+  .ability-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Sol sütun geniş, sağda 2 eşit sütun */
+    grid-template-rows: auto;  /* 3 satır: Graphic Design yüksek, diğerleri yarım */
+    grid-template-areas: 
+      'graphic-design graphic-design ui-ux apps'
+      'graphic-design graphic-design illustrations'
+      'photography photography motion-graphics motion-graphics';
+    gap: 24px;
+  }
+  .amy-img img {
+    min-width: 445px;
+    transform: translateX(-70px);
+    margin-bottom: 0px;
+  }
+
+  .who-is-amy {
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+  }
+
+  .who-is-amy p {
+    text-align: left;
+  }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    max-width: 573px;
+    margin-inline: auto;
+  }
+
+  h1 {
+    font-size: 44px;
+    margin-bottom: 30px;
+    margin-top: 64px;
+  }
+  
+  .footer-card {
+    padding-inline: 75px;
+  }
+  
+  .footer-card h2 {
+    text-align: center;
+    margin-bottom: 26px;
+  }
+}
+
+@media (width >= 1440px) {
+  
+  .motion-graphics img {
+    margin-bottom: 16px;
+  }
+
+  .illustrations img {
+    margin-bottom: 40px;
+  }
+
+  .photography img {
+    margin-bottom: 16px;
+  }
+  
+  .header {
+    max-width: 1110px;
+    margin-inline: auto;
+  }
+
+  .ability-cards {
+    max-width: 1110px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: auto; 
+    grid-template-areas: 
+      'graphic-design graphic-design ui-ux apps photography'
+      'graphic-design graphic-design illustrations illustrations motion-graphics motion-graphics';
+    gap: 24px;
+  }
+
+  .footer-card, .footer, .who-is-amy, .about {
+    max-width: 1110px;
+    margin-inline: auto;
+  }
+
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    max-width: 751px;
+    margin-inline: auto;
+  }
+
+  h1 {
+    font-size: 56px;
+    margin-bottom: 40px;
+    margin-top: 66px;
+  }
+
+  .footer-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-card-text {
+    max-width: 540px;
+
+  }
+
+  .footer-card h2 {
+    text-align: left;
+  }
+
+  .footer-card p {
+    text-align: left;
+  }
+}
